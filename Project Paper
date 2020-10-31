@@ -1,0 +1,30 @@
+Cooper Denning, Zane Anderson
+Dr. William Hooper
+October 29, 2020
+Recommendation Algorithms
+With the rise of streaming taking over platforms like the radio and buying physical copies of music that one might enjoy, comes a more streamlined experience based off the preferences of the listener.  Programs like Spotify and Pandora are now able to use algorithms to recommend music based off the listener’s experience. If the listeners like or dislike a song, it will update the inputs of the algorithm to give finer results to provide a listening experience more preferable to the user.
+In the world of streaming, there are more than one algorithm used for each of the different platforms. According to a Cornell Blog from 2016, Pandora uses a simple binary algorithm that changes based on whether the user ‘Likes’ or ‘Dislikes’ a song and will alter the recommended music based on those results. Spotify has many layers to recommending songs to the listener. It puts into account the user’s playlists, liked songs, repetitions, and creates a musical “taste profile” for each user to bend and shape the algorithm to better fit the listener. Spotify will search through other users’ playlists to compare with the user’s playlists, and if they are significantly similar, will recommend songs off the other persons’ playlists. This algorithm also changes throughout each week, altering to fit the type of musical interest that the user might be interested in a certain timeframe.
+Spotify knows a lot of what the user does with the app. According to Adam Pasick in his Quartz article, “The Magic That Makes Spotify’s Discover Weekly Playlists So Damn Good,” he asked multiple Spotify employees what affects his Discover Weekly playlist, which changes every week and recommends new songs to users. They responded with multiple different actions the user can do that modifies their discover playlist week to week. Spotify knows what songs you add to your playlists, they know what songs you have skipped in the first 30 seconds, and they also know when a user looks up an artist’s profile after listening to one of their songs to hear more from them. All of these inputs alter the behavior of Spotify’s algorithm which results in a recommended library of new music every week for each individual user.
+Using deep learning and neural nets, algorithms used Spotify and Pandora can be recreated to create a new experience. Deriving from a dataset found on kaggle.com, we can use this data to create a foundation for an AI program which recommends music to a user based off their preferences. To keep it simple at the beginning, the program will be similar to Pandora’s algorithm, where likes and dislikes are the sole influencers of output data. The program will either start with data already inputted based off the kaggle.com data or give the user an option to choose a favorite genre to start off the narrowing process. To prevent the program from overfitting, Dropout will be used to allow a fresher start on the algorithm. This will help both adapt the algorithm to the user’s current listening preferences as well as keep the program from guessing the wrong outputs for the user.
+Carlos Gomez-Uribe and Neil Hunt of Netflix discussed in “The Netflix Recommender System: Algorithms, Business Value, and Innovation,” how they edit their algorithm for recommending shows for their users. When using test subjects on their algorithms they have positive and negative results when working with current users as well as new users. Current users already have a larger sample pool of shows to work from while new members will be more open to try new ways of altering the shows that are recommended to them. With this in mind, we can test our program on different people to yield different results and change our UI and algorithm based on what worked and what didn’t.
+Our conclusion is written with the intent to raise the urgency at which we will finish the coding diagram and final product. This project was a lot more than we both thought and neither of us were truly prepared to take it on. The next couple weeks will see great strides in design of this AI. Our idea is to use the SQlite database and native methods to produce albums based on rating and genre. User scores will be recorded with each user having a different account made so that their preferences may be tracked. This rating system will use a deep learning system and judge outputs based on keywords throughout each review. Comparing how many matching words there are between a highly praised user score. A lot of this system will need fleshing out and Zane and I will set up a schedule in the next couple of days with new pushes coming on Wednesday and Friday of each week. Although we have something far from a finished product we wanted to let you know that the plan is being executed to make our code as good as we first envisioned it.
+
+
+
+
+
+
+
+
+
+
+Works Cited
+Carlos A. Gomez-Uribe, Neil Hunt. “The Netflix Recommender System: Algorithms, Business, Value, and Innovation.” https://dl.acm.org/doi/10.1145/2843948. Article No. 13. December 2015
+
+Chris Johnson. “Explicit Matrix Factorization 18-Algorithmic Music Recommendations at Spotify.” https://www.slideshare.net/MrChrisJohnson/algorithmic-music-recommendations-at-spotify/18-Explicit_Matrix_Factorization18Approximate_ratings_matrix
+
+Networks II. Cornell University. “Spotify Recommendation (Matching) Algorithm.” https://blogs.cornell.edu/info4220/2016/03/18/spotify-recommendation-matching-algorithm/
+
+https://pitchfork.com/
+
+Wikipedia. “Recommender System.” https://en.wikipedia.org/wiki/Recommender_system#Approaches
