@@ -5,7 +5,7 @@ import _sqlite3
 import lxml as lx
 import random as newRandom
 
-sq = _sqlite3.connect("E:/sqlite/database.sqlite")
+sq = _sqlite3.connect("database.sqlite")
 
 
 s = sq.cursor()
@@ -39,12 +39,12 @@ for item in newlist:
 newnum1 = 0
 best_Album = ''
 for item in newlist1:
-    if (item[4] > newnum1):
+    if ((item[4] > newnum1) and (best_Album == '')):
         newnum1 = item[4]
         best_Album = item[1]
 
-print(newnum1)
-print(best_Album)
+print(condensedSearchLists)
+
 
 
 
